@@ -1,0 +1,10 @@
+r = 0:6;
+y1 = r*exp(j*pi/6);
+y2 = zeros(size(r));
+plot(r,y1,'r--',r,y2,'b--','linewidth',3);
+text(2.5,2,'\leftarrow A line for \pi/6' );
+text(2.5,0.3,'\downarrow A line for 0' );
+text(3.5,1,'Region Between 0<arg(z)<\pi/6');
+legend('arg(z)=pi/6','arg(z)=0');
+xlabel('Re');ylabel('Im');
+title('Problem 1(c)');
